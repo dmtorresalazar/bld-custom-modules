@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Bld_client_services install/uninstall routines.
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function bld_client_services_install() {
+  variable_set('bld.services_client.protocol', 'https');
+  variable_set('bld.services_client.url', 'api.ark09.net/NewsService.svc');
+  variable_set('bld.services_client.key', 'GetNews');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function bld_client_services_uninstall() {
+  variable_del('bld.services_client.protocol');
+  variable_del('bld.services_client.url');
+  variable_del('bld.services_client.key');
+ }
+
+
+

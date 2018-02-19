@@ -1,0 +1,20 @@
+name = Services Client BLD
+description = Get content by Ark09 News Feed APIs.
+package = BLD Modules
+core = 7.x
+configure = admin/config/services/services-client-bld
+dependencies[] = og
+dependencies[] = video_embed_field
+
+files[] = includes/DrupalBldClient.inc
+files[] = includes/BldNodeOperation.inc
+files[] = includes/BldController.inc
+files[] = includes/BldFieldsController.inc
+
+
+; Information added by Drupal.org packaging script on 2017-12-01
+version = "7.x-1.0-beta"
+core = "7.x"
+project = "services_bld"
+;datestamp = "1512141196"
+
